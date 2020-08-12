@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <h1>123</h1>
+  <h1>456</h1>
   </div>
 </template>
 
