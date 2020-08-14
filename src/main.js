@@ -3,6 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import http from './http'
+import store from './store'
+import './utils/fontsize'
+import './style/base.styl'
+import './assets/font/iconfont.css'
+import Vant from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Vant);
+
+Vue.prototype.http=http
 
 Vue.config.productionTip = false
 
@@ -10,6 +21,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
